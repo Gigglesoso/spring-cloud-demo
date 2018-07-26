@@ -1,0 +1,18 @@
+server:
+  port: 8000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+management:
+  security:
+    enabled: false   #这里设置为false，可以使actuator的节点不许要权限就可以访问   
+
+   
+   
