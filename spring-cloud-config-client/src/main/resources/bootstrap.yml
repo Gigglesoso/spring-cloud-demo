@@ -1,0 +1,12 @@
+#bootstrap.yml会在项目启动前就加载，这个文件可以从配置中心中加载该项目启动时候需要的配置信息
+spring:
+  application:
+    name: config-client                #服务名称
+  cloud:
+    config: 
+      name: config-client              #要使用的配置文件的名称
+      profile: test,db                 #要加载的配置文件的profile
+      uri: http://localhost:8888/      #配置中心的地址
+      
+
+        

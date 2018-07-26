@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server                   #配置中心的服务名称
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: D:/config     #配置文件所在的文件夹的
+  profiles:
+    active: native                        #表示配置中心中其他服务的配置文件为本地存储，此外还可以svn或者git
+    
+server:
+  port: 8888                              #配置中心的服务端口号
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8000/eureka/    #注册中心地址
