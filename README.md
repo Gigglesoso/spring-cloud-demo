@@ -1,2 +1,1 @@
-# spring-cloud-demo
-some useful demo
+学习springcloud自己写的小例子。
