@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: eureka-producer
+  datasource:
+     driver-class-name: oracle.jdbc.OracleDriver  
+     url: jdbc:oracle:thin:@192.168.4.171:1521/db 
+     username: tjcustoms  
+     password: tjc
+  
+
+server:
+  port: 9003                                       #该客户端端口
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8000/eureka/    #注册中心地址
+      
+
+      
